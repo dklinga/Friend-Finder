@@ -5,6 +5,6 @@ In this activity, we build a compatibility-based "FriendFinder" application. Thi
 
 ### NPM packages
 
-body-parager NPM Package - https://www.npmjs.com/package/inquirer
-express NPM Package - https://www.npmjs.com/package/express
-path NPM Package - https://www.npmjs.com/package/path
+* body-parager NPM Package - https://www.npmjs.com/package/inquirer
+* express NPM Package - https://www.npmjs.com/package/express
+* path NPM Package - https://www.npmjs.com/package/path
