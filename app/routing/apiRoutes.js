@@ -4,7 +4,7 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var friendData = require("..app/data/friends");
+var friendData = require("../data/friends");
 
 // ===============================================================================
 // ROUTING
@@ -29,19 +29,34 @@ module.exports = function(app) {
   // Then the server saves the data to the tableData array)
   // ---------------------------------------------------------------------------
 
-  app.post("/api/friends", function(req, res) {
-  // req.body hosts is equal to the JSON post sent from the user
-  // This works because of our body-parser middleware
-  var newFriends =req.body;
-   // Using a RegEx Pattern to remove spaces from newCharacter
-  // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-  newFriend.routeName = newFriends.name.replace(/\s+/g, "").toLowerCase();
+  app.post('/api/friends', function(req,res){
+    //grabs the new friend's scores to compare with friends in friendData
+    var newFriendScores = req.body.scores;
+    var scoresArray = [];
+    var friendCount = 0;
+    var bestMatch = 0;
 
-  console.log(newFriend);
+    //runs through all current friends in list
+    for(var i=0; i<friendData.length; i++){
+      var scoresDiff = 0;
+      for(var j=0; j<newFriendScores.length; j++){
+        scoresDiff += (Math.abs(parseInt(friendData[i].scores[j]) - parseInt(newFriendScores[j])));
+      }
 
-  characters.push(newFriend);
+      //push results into scoresArray
+      scoresArray.push(scoresDiff);
+    }
 
-  res.json(newFriend);
-}); 
-    
-    
+    //after all friends are compared, find best match
+    for(var i=0; i<scoresArray.length; i++){
+      if(scoresArray[i] <= scoresArray[bestMatch]){
+        bestMatch = i;
+      }
+    }
+
+    var bestFriend = friendData[bestMatch];
+    res.json(bestFriend);
+
+    friendData.push(req.body);
+  });
+};
