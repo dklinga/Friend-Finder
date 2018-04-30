@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder</title>
+  <title>AvengerFinder</title>
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -16,7 +16,22 @@
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  <style>
+    body {
+      background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+      linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+      linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+      linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+      linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+      linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+      background-color: #131313;
+      background-size: 20px 20px;
+    }
+    h2, h3, h4 {
+    color:skyblue;
+}
 
+  </style>
 </head>
 
 <body>
@@ -26,7 +41,9 @@
     <h2>Survey Questions</h2>
     <hr>
 
-    <h3><strong>About You</strong></h3>
+    <h3>
+      <strong>About You</strong>
+    </h3>
     <h4>Name (Required)</h4>
     <input type="text" id="name" class="form-control" required>
 
@@ -35,8 +52,10 @@
 
     <hr>
 
-    <h3><strong>Question 1</strong></h3>
-    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+    <h3>
+      <strong>Question 1</strong>
+    </h3>
+    <h4>Your want to help out your fellow man.</h4>
     <select class="chosen-select" id="q1">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -46,8 +65,10 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 2</strong></h3>
-    <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+    <h3>
+      <strong>Question 2</strong>
+    </h3>
+    <h4>Generally speaking, you rely more on your strength than your mind.</h4>
     <select class="chosen-select" id="q2">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -58,7 +79,9 @@
     </select>
 
 
-    <h3><strong>Question 3</strong></h3>
+    <h3>
+      <strong>Question 3</strong>
+    </h3>
     <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
     <select class="chosen-select" id="q3">
       <option value=""></option>
@@ -70,8 +93,10 @@
     </select>
 
 
-    <h3><strong>Question 4</strong></h3>
-    <h4>You rarely do something just out of sheer curiosity.</h4>
+    <h3>
+      <strong>Question 4</strong>
+    </h3>
+    <h4>You rarely like to fly around in space.</h4>
     <select class="chosen-select" id="q4">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -82,7 +107,9 @@
     </select>
 
 
-    <h3><strong>Question 5</strong></h3>
+    <h3>
+      <strong>Question 5</strong>
+    </h3>
     <h4>People can rarely upset you.</h4>
     <select class="chosen-select" id="q5">
       <option value=""></option>
@@ -94,7 +121,9 @@
     </select>
 
 
-    <h3><strong>Question 6</strong></h3>
+    <h3>
+      <strong>Question 6</strong>
+    </h3>
     <h4>It is often difficult for you to relate to other people’s feelings.</h4>
     <select class="chosen-select" id="q6">
       <option value=""></option>
@@ -106,7 +135,9 @@
     </select>
 
 
-    <h3><strong>Question 7</strong></h3>
+    <h3>
+      <strong>Question 7</strong>
+    </h3>
     <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
     <select class="chosen-select" id="q7">
       <option value=""></option>
@@ -117,7 +148,9 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 8</strong></h3>
+    <h3>
+      <strong>Question 8</strong>
+    </h3>
     <h4>You rarely get carried away by fantasies and ideas.</h4>
     <select class="chosen-select" id="q8">
       <option value=""></option>
@@ -128,7 +161,9 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 9</strong></h3>
+    <h3>
+      <strong>Question 9</strong>
+    </h3>
     <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
     <select class="chosen-select" id="q9">
       <option value=""></option>
@@ -139,7 +174,9 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h3><strong>Question 10</strong></h3>
+    <h3>
+      <strong>Question 10</strong>
+    </h3>
     <h4>You feel more energetic after spending time with a group of people.</h4>
     <select class="chosen-select" id="q10">
       <option value=""></option>
@@ -154,13 +191,17 @@
     <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+      Submit</button>
 
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/dklinga/Friend-Finder">GitHub Repo</a></p>
+        <p>
+          <a href="/api/friends">API Friends List</a> |
+          <a href="https://github.com/dklinga/Friend-Finder">GitHub Repo</a>
+        </p>
       </div>
     </footer>
 
@@ -174,7 +215,9 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <h2 class="modal-title">
+            <strong>Best Match</strong>
+          </h2>
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
@@ -211,19 +254,19 @@
     }
 
     // Capture the form inputs
-    $("#submit").on("click", function(event) {
+    $("#submit").on("click", function (event) {
       event.preventDefault();
 
       // Form validation
       function validateForm() {
         var isValid = true;
-        $(".form-control").each(function() {
+        $(".form-control").each(function () {
           if ($(this).val() === "") {
             isValid = false;
           }
         });
 
-        $(".chosen-select").each(function() {
+        $(".chosen-select").each(function () {
 
           if ($(this).val() === "") {
             isValid = false;
@@ -253,7 +296,7 @@
         };
 
         // AJAX post the data to the friends API.
-        $.post("/api/friends", userData, function(data) {
+        $.post("/api/friends", userData, function (data) {
 
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);
