@@ -36,14 +36,14 @@ module.exports = function(app) {
     var friendCount = 0;
     var bestMatch = 0;
 
-    //runs through all current friends in list
+    //runs through friends in list
     for(var i=0; i<friendData.length; i++){
       var scoresDiff = 0;
       for(var j=0; j<newFriendScores.length; j++){
         scoresDiff += (Math.abs(parseInt(friendData[i].scores[j]) - parseInt(newFriendScores[j])));
       }
 
-      //push results into scoresArray
+      //push results into array
       scoresArray.push(scoresDiff);
     }
 
