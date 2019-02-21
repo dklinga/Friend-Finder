@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>AvengerFinder</title>
+  <title>Value Survey</title>
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -18,17 +18,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
   <style>
     body {
-      background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-      linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-      linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-      linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-      linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-      linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-      background-color: #131313;
-      background-size: 20px 20px;
+      background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
     }
     h2, h3, h4 {
-    color:skyblue;
+    color:white;
 }
 
   </style>
@@ -47,15 +40,14 @@
     <h4>Name (Required)</h4>
     <input type="text" id="name" class="form-control" required>
 
-    <h4>Link to Photo Image (Required)</h4>
-    <input type="text" id="photo" class="form-control" required>
+
 
     <hr>
 
     <h3>
       <strong>Question 1</strong>
     </h3>
-    <h4>Your want to help out your fellow man.</h4>
+    <h4>You continuously seek out new exciting challenges.</h4>
     <select class="chosen-select" id="q1">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -68,7 +60,7 @@
     <h3>
       <strong>Question 2</strong>
     </h3>
-    <h4>Generally speaking, you rely more on your strength than your mind.</h4>
+    <h4>You want to be powerful, prestigious, and dominant over others.</h4>
     <select class="chosen-select" id="q2">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -82,7 +74,7 @@
     <h3>
       <strong>Question 3</strong>
     </h3>
-    <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+    <h4>You care about safety and security.</h4>
     <select class="chosen-select" id="q3">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -96,7 +88,7 @@
     <h3>
       <strong>Question 4</strong>
     </h3>
-    <h4>You rarely like to fly around in space.</h4>
+    <h4>You place importance on having fun and a good time.</h4>
     <select class="chosen-select" id="q4">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -110,7 +102,7 @@
     <h3>
       <strong>Question 5</strong>
     </h3>
-    <h4>People can rarely upset you.</h4>
+    <h4>You follow traditional cultural customs and practices.</h4>
     <select class="chosen-select" id="q5">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -124,7 +116,7 @@
     <h3>
       <strong>Question 6</strong>
     </h3>
-    <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+    <h4>You take your competence and skill development seriously.</h4>
     <select class="chosen-select" id="q6">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -138,7 +130,7 @@
     <h3>
       <strong>Question 7</strong>
     </h3>
-    <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+    <h4>You love engaging in new and exciting activities.</h4>
     <select class="chosen-select" id="q7">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -151,7 +143,7 @@
     <h3>
       <strong>Question 8</strong>
     </h3>
-    <h4>You rarely get carried away by fantasies and ideas.</h4>
+    <h4>You want to be free and autonomous in your actions.</h4>
     <select class="chosen-select" id="q8">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -177,7 +169,7 @@
     <h3>
       <strong>Question 10</strong>
     </h3>
-    <h4>You feel more energetic after spending time with a group of people.</h4>
+    <h4>You chase goals to be more successful.</h4>
     <select class="chosen-select" id="q10">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -196,14 +188,7 @@
       Submit</button>
 
     <hr>
-    <footer class="footer">
-      <div class="container">
-        <p>
-          <a href="/api/friends">API Friends List</a> |
-          <a href="https://github.com/dklinga/Friend-Finder">GitHub Repo</a>
-        </p>
-      </div>
-    </footer>
+
 
   </div>
 
@@ -222,6 +207,14 @@
         <div class="modal-body">
           <h2 id="match-name"></h2>
           <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+          <H2>Belonging</H2>
+          <H2>Enthusiasm</H2>
+          <H2>Control</H2>
+          <H2>Recognition</H2>
+          <H2>Popularity</H2>
+          <H2>Aggressive</H2>
+          <H2>Leadership</H2>
+          <H2>Achievement</H2>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
