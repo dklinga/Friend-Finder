@@ -1,8 +1,8 @@
 var friendData = [
 
 {
-  "name":"Tony",
-  "photo":"https://vignette.wikia.nocookie.net/marvelcentral/images/4/4a/Tony-Stark-iron-man-11234572-1485-2061.jpg/revision/latest?cb=20110219055106",
+  "name":"Margaret Thatcher",
+  "photo":"https://en.wikipedia.org/wiki/Margaret_Thatcher#/media/File:Margaret_Thatcher.png",
   "scores":[
       5,
       2,
